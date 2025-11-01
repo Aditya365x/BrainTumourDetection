@@ -96,7 +96,7 @@ model.add(Dense(2, activation='softmax'))
 model.compile(loss = "categorical_crossentropy", optimizer='Adamax')
 print(model.summary())
 
-history = model.fit(x_train, y_train, epochs = 3, batch_size = 40, verbose = 1,validation_data = (x_test, y_test))
+history = model.fit(x_train, y_train, epochs = 30, batch_size = 40, verbose = 1,validation_data = (x_test, y_test))
 
 plt.plot(history.history['loss'])
 plt.plot(history.history['val_loss'])
